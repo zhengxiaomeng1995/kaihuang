@@ -1,0 +1,50 @@
+.button_box{
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    .btn{
+        float: right;
+        cursor: pointer;
+    }
+}
+.clearfix{
+    clear:both;
+}
+.onesmallelementbox{
+    padding-bottom: 16px;
+    
+    .onesmallelement{
+        float:left;
+        padding:3px 5px;
+        border: 1px solid rgb(92, 194, 235);
+        border-radius: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: move;
+        position: relative;
+
+        @w: 18px;
+        b{
+            box-sizing:border-box;
+            position: absolute;
+            width: @w;
+            height: @w;
+            border-radius: 50%;
+            border:2px solid#333;
+            color:white;
+            background:red;
+            right:-@w/2;
+            top:-@w/2;
+            text-align: center;
+            line-height: @w;
+            font-size: 14px; 
+            cursor: pointer;
+        }
+    }
+}
+.beixuanbox{
+    span{
+        .onesmallelementbox .onesmallelement();
+        cursor: pointer;
+    }
+}
